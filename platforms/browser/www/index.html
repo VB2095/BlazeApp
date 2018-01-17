@@ -1,72 +1,57 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/onsen.css">
-        <link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css">
-        <title>Hello World</title>
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/onsen.css">
+<link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css">
+<title>Hello World</title>
 
-    </head>
-    <body>
-       <ons-page>
+</head>
+<body>
+  <ons-page>
+<div class="cloudsglobal">
 
-       	<ons-toolbar>
-       		<div class="left">Blaze</div>
-       	</ons-toolbar>
 
-        <ons-card>
-    <img src="http://lorempicsum.com/nemo/255/200/2" alt="Onsen UI" style="width: 100%">
-    <div class="title">
-      VTT EN PARACHUTE
-    </div>
-    <div class="content">
-      <div>
-        <ons-button><ons-icon icon="ion-thumbsup"></ons-icon></ons-button>
-        <ons-button><ons-icon icon="ion-share"></ons-icon></ons-button>
+  <svg class="clouds cloud1" xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11">
+    <path fill="#FFF" d="M8.03571429,11 L3.48589286,11 C1.56375,11 0,9.51347222 0,7.68594444 C0,6.41666667 0.869464286,5.09911111 2.06775,4.55308333 L2.25,4.47027778 L2.25,4.27777778 C2.25,4.23897222 2.25257143,4.19955556 2.25482143,4.15983333 L2.25771429,4.11094444 L2.25385714,4.04677778 C2.25192857,4.02202778 2.25,3.99727778 2.25,3.97222222 C2.25,2.79308333 3.25960714,1.83333333 4.5,1.83333333 C4.59932143,1.83333333 4.69735714,1.84158333 4.79475,1.85380556 C4.81982143,1.85686111 4.84489286,1.86083333 4.86964286,1.86480556 C4.95546429,1.87825 5.04,1.89597222 5.12325,1.91888889 C5.1345,1.92194444 5.14607143,1.92408333 5.15732143,1.92713889 C5.24892857,1.95372222 5.33828571,1.98733333 5.42571429,2.02522222 C5.44853571,2.035 5.47071429,2.04569444 5.49321429,2.05608333 C5.57035714,2.09244444 5.64589286,2.13216667 5.71885714,2.17708333 C6.33825,2.55841667 6.75,3.21994444 6.75,3.97222222 C6.75,4.14119444 6.89367857,4.27777778 7.07142857,4.27777778 C7.24917857,4.27777778 7.39285714,4.14119444 7.39285714,3.97222222 C7.39285714,3.13072222 6.99235714,2.37752778 6.36428571,1.87275 C7.28582143,0.726916667 8.80328571,0 10.3130357,0 C12.8025,0 14.8699286,1.87458333 15.0856071,4.24355556 C14.7571071,4.22155556 14.2653214,4.21025 13.7732143,4.28144444 C13.5977143,4.30680556 13.4771786,4.46263889 13.5038571,4.62947222 C13.5279643,4.78072222 13.6648929,4.88919444 13.8211071,4.88919444 C13.8371786,4.88919444 13.8535714,4.88797222 13.8696429,4.88552778 C14.5854643,4.78255556 15.3315,4.87911111 15.3752143,4.88491667 C16.8717857,5.15533333 18,6.46586111 18,7.93588889 C18,9.62530556 16.5538929,11 14.7767143,11 L10.6071429,11 L8.03571429,11 Z"/>
+  </svg>
+
+  <svg class="clouds cloud2" xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16">
+    <path fill="#FFF" d="M11.6071429,16 L5.03517857,16 C2.25875,16 0,13.8377778 0,11.1795556 C0,9.33333333 1.25589286,7.41688889 2.98675,6.62266667 L3.25,6.50222222 L3.25,6.22222222 C3.25,6.16577778 3.25371429,6.10844444 3.25696429,6.05066667 L3.26114286,5.97955556 L3.25557143,5.88622222 C3.25278571,5.85022222 3.25,5.81422222 3.25,5.77777778 C3.25,4.06266667 4.70832143,2.66666667 6.5,2.66666667 C6.64346429,2.66666667 6.78507143,2.67866667 6.92575,2.69644444 C6.96196429,2.70088889 6.99817857,2.70666667 7.03392857,2.71244444 C7.15789286,2.732 7.28,2.75777778 7.40025,2.79111111 C7.4165,2.79555556 7.43321429,2.79866667 7.44946429,2.80311111 C7.58178571,2.84177778 7.71085714,2.89066667 7.83714286,2.94577778 C7.87010714,2.96 7.90214286,2.97555556 7.93464286,2.99066667 C8.04607143,3.04355556 8.15517857,3.10133333 8.26057143,3.16666667 C9.15525,3.72133333 9.75,4.68355556 9.75,5.77777778 C9.75,6.02355556 9.95753571,6.22222222 10.2142857,6.22222222 C10.4710357,6.22222222 10.6785714,6.02355556 10.6785714,5.77777778 C10.6785714,4.55377778 10.1000714,3.45822222 9.19285714,2.724 C10.5239643,1.05733333 12.7158571,0 14.8966071,0 C18.4925,0 21.4787857,2.72666667 21.7903214,6.17244444 C21.3158214,6.14044444 20.6054643,6.124 19.8946429,6.22755556 C19.6411429,6.26444444 19.4670357,6.49111111 19.5055714,6.73377778 C19.5403929,6.95377778 19.7381786,7.11155556 19.9638214,7.11155556 C19.9870357,7.11155556 20.0107143,7.10977778 20.0339286,7.10622222 C21.0678929,6.95644444 22.1455,7.09688889 22.2086429,7.10533333 C24.3703571,7.49866667 26,9.40488889 26,11.5431111 C26,14.0004444 23.9111786,16 21.3441429,16 L15.3214286,16 L11.6071429,16 Z"/>
+  </svg>
+</div>
+<template id="swipe.html">
+  <ons-gesture-detector>
+    <div id="detect-area">
+    <ons-card>
+      <img src="http://lorempicsum.com/nemo/255/200/2" alt="Onsen UI" style="width: 100%">
+      <div class="title">
+        VTT EN PARACHUTE
       </div>
-      <ons-list>
-        <ons-list-header>Avis</ons-list-header>
-        <ons-list-item>MEGA FUN !!</ons-list-item>
-        <ons-list-item>Super</ons-list-item>
-        <ons-list-item>Mouais bof</ons-list-item>
-      </ons-list>
+      <div class="content">
+        <div>
+          <ons-button><ons-icon icon="ion-thumbsup"></ons-icon></ons-button>
+          <ons-button><ons-icon icon="ion-share"></ons-icon></ons-button>
+        </div>
+        <ons-list>
+          <ons-list-header>Avis</ons-list-header>
+          <ons-list-item>MEGA FUN !!</ons-list-item>
+          <ons-list-item>Super</ons-list-item>
+          <ons-list-item>Mouais bof</ons-list-item>
+        </ons-list>
+      </div>
+    </ons-card>
     </div>
-  </ons-card>
-       </ons-page>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/onsenui.min.js"></script>
-    </body>
+  </ons-gesture-detector>
+</template>
+  </ons-page>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/onsenui.min.js"></script>
+</body>
 </html>

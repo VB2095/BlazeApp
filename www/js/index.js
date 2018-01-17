@@ -46,9 +46,10 @@ var app = {
 
     // Swiping
 
-  document.addEventListener('swipeleft' 'swiperight', function(event) {
+  document.addEventListener('swipeleft', function(event) {
     if (event.target.matches('#detect-area')) {
       // need to add what happens when event is triggered
+      console.log('event detected')
     }
   });
 
