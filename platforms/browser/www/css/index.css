@@ -149,10 +149,18 @@ overflow-x: hidden !important;
 
 .cloud2 {
   fill: #eee;
-  -webkit-animation: move 35s linear 10s infinite backwards;
-  -moz-animation: move 35s linear 10s infinite backwards;
-  -o-animation: move 35s linear 10s infinite backwards;
-  animation: move 35s linear 10s infinite backwards;
+  -webkit-animation: move 40s linear infinite backwards;
+  -moz-animation: move 40s linear infinite backwards;
+  -o-animation: move 40s linear infinite backwards;
+  animation: move 40s linear infinite backwards;
+}
+
+.cloud3 {
+  fill: #eee;
+  -webkit-animation: move 45s linear infinite backwards;
+  -moz-animation: move 45s linear infinite backwards;
+  -o-animation: move 45s linear infinite backwards;
+  animation: move 45s linear infinite backwards;
 }
 @-webkit-keyframes move {
   from {-webkit-transform: translateX(-40px);}
