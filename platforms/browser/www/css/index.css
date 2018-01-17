@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#F76B1C;
+    background-color:#F76B1C !important;
     background-image:linear-gradient(top, #FAD961 0%, #F76B1C 51%);
     background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
     background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
@@ -108,11 +108,25 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+.page{
+overflow-x: hidden !important;
+}
 
+.page, .page__background, .page__content{
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color:#F76B1C !important;
+  background-image:linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  position: unset;
+}
 
 /* clouds animation */
 .cloudsglobal{
-  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 .clouds {
   width: 200x;
